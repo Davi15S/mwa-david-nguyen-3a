@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { usesState, useState } from "react";
+import ContentItem from './ContentItem';
 
 function App() {
 
   const [count, setCount] = useState(0);
 
-const handleClick = () => {
-  console.log("User click");
-  setCount(count + 1);
-};
+  const handleClick = () => {
+    console.log("User click");
+    setCount(count + 1);
+  };
 
 
   return (
@@ -19,6 +20,10 @@ const handleClick = () => {
         <p>Hodnota počtu: {count}</p>
         <div>
           <button onClick={handleClick}>Přičti</button>
+        </div>
+
+        <div>
+          <ContentItem text="Péťa Novák" />
         </div>
       </header>
     </div>
