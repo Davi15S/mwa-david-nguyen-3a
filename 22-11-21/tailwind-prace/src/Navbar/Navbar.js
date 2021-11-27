@@ -76,7 +76,7 @@ function Navbar() {
           <NavItem txt="Features" />
         </div>
       </div>
-      <div className="text-white text-base border-2 border-purple-500 rounded-full p-4 bg-purple-500">
+      <div className="text-white text-base border-purple-500 rounded-full p-4 bg-purple-500 hover:bg-purple-400 transition-colors duration-500">
         <a className="p-4 text-white font-bold" href="https://cs.money/">SIGN IN</a>
       </div>
     </nav>
@@ -85,7 +85,7 @@ function Navbar() {
 
 function NavItem({ txt }) {
   return (
-    <a className="inline-block mx-7 text-white text-base" href="">
+    <a className="inline-block mx-7 text-white text-base hover:text-purple-500 transition-colors duration-500" href="">
       {txt}
     </a>
   );

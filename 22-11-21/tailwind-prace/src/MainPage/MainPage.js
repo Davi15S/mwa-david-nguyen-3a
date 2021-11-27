@@ -14,7 +14,7 @@ function MainPage() {
           to sale
         </p>
         <a
-          className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold"
+          className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold hover:bg-purple-400 transition-colors duration-500"
           href="https://cs.money/"
         >
           TRY IT NOW
