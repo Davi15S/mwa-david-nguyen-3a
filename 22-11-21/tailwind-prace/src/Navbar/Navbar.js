@@ -2,7 +2,7 @@ import "../Navbar/navbar.css";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-9 px-72 absolute z-10 w-full">
+    <nav className="flex items-center justify-between p-4 px-72 fixed z-30 w-full nav">
       <div className="flex">
         <a href="">
           <svg
@@ -76,8 +76,8 @@ function Navbar() {
           <NavItem txt="Features" />
         </div>
       </div>
-      <div className="text-white text-base border-purple-500 rounded-full p-4 bg-purple-500 hover:bg-purple-400 transition-colors duration-500">
-        <a className="p-4 text-white font-bold" href="https://cs.money/">SIGN IN</a>
+      <div className="text-white text-base border-purple-500 rounded-xl p-3 bg-purple-500 hover:bg-purple-400 transition-colors duration-500">
+        <a className="p-4 text-white font-bold text-base" href="https://cs.money/">SIGN IN</a>
       </div>
     </nav>
   );
