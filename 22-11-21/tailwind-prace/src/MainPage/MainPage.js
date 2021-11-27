@@ -1,27 +1,30 @@
 import "../MainPage/mainPage.css";
 import img from "../images/csmoney.jpg";
 import logo from "../images/csmoney-logo.png";
+import React, { useEffect, useState } from "react";
 
 function MainPage() {
+
   return (
-    <div className="costum">
+    <div className="costum" id="top">
       <div className="relative flex flex-col z-20 top-60">
         <p className="text-6xl font-bold text-white text-center">
           Trade the greatest skins
         </p>
         <p className="text-white text-base py-14 text-center font-medium col">
-          CS.MONEY helps flexibly work with your inventory on Steam from trade
-          to sale
+          Buy, sell, and trade skins easier and faster. All deals are secured
+          with the highest level protection methods.
         </p>
         <a
           className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold hover:bg-purple-400 transition-colors duration-500"
-          href="https://cs.money/" target="_blank"
+          href="https://cs.money/"
+          target="_blank"
         >
           TRY IT NOW
         </a>
         <img className="self-center my-40 w-2/3 rounded-2xl" src={img} alt="" />
 
-        <p className="text-white text-3xl font-medium text-center">
+        <p className="text-white text-3xl font-medium text-center" id="section1">
           Meet the features of site
         </p>
 
@@ -35,12 +38,13 @@ function MainPage() {
           />
         </div>
 
-        <div className="relative w-2/3 self-center top-80 flex">
+        <div className="relative w-2/3 self-center top-80 flex" id="section2">
           <iframe
             className="rounded-2xl"
             width="854"
             height="480"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
+            allowfullscreen="allowfullscreen"
           ></iframe>
           <div className="pl-32">
             <div className="pb-10">
@@ -55,10 +59,34 @@ function MainPage() {
                 txt="Trusted by the biggest esports brands"
               />
               <ul className="costum-marker text-white h-52 font-medium col">
-              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://ecs.faceit.com/" target="_blank">ECS</a></li>
-              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://blastpremier.com/" target="_blank">BlastProSeries</a></li>
-              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://starladder.com/en" target="_blank">Starladder</a></li>
-            </ul>
+                <li>
+                  <a
+                    className="hover:text-purple-400 transition-colors duration-500"
+                    href="https://ecs.faceit.com/"
+                    target="_blank"
+                  >
+                    ECS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-purple-400 transition-colors duration-500"
+                    href="https://blastpremier.com/"
+                    target="_blank"
+                  >
+                    BlastProSeries
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-purple-400 transition-colors duration-500"
+                    href="https://starladder.com/en"
+                    target="_blank"
+                  >
+                    Starladder
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

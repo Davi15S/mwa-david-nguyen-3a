@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .costum {
-  height: 3500px;
+  height: 3600px;
   background-color: #24232b;
 }
 
