@@ -15,18 +15,18 @@ function MainPage() {
         </p>
         <a
           className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold hover:bg-purple-400 transition-colors duration-500"
-          href="https://cs.money/"
+          href="https://cs.money/" target="_blank"
         >
           TRY IT NOW
         </a>
         <img className="self-center my-40 w-2/3 rounded-2xl" src={img} alt="" />
 
         <p className="text-white text-3xl font-medium text-center">
-          Meet the feature of product
+          Meet the features of site
         </p>
 
         <div className="self-center w-2/3 grid grid-cols-4 top-24 relative gap-x-24">
-          <Function title="40%" txt="bunos for tup up balance" />
+          <Function title="40%" txt="bunos for top up balance" />
           <Function title="80 K" txt="CS:GO and Dota2 items on our website" />
           <Function title="30 sec" txt="from logging in to making a purchase" />
           <Function
@@ -54,11 +54,16 @@ function MainPage() {
                 title="Security"
                 txt="Trusted by the biggest esports brands"
               />
+              <ul className="costum-marker text-white h-52 font-medium col">
+              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://ecs.faceit.com/" target="_blank">ECS</a></li>
+              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://blastpremier.com/" target="_blank">BlastProSeries</a></li>
+              <li><a className="hover:text-purple-400 transition-colors duration-500" href="https://starladder.com/en" target="_blank">Starladder</a></li>
+            </ul>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 w-2/3 self-center relative top-96 gap-x-48 mt-20">
+        <div className="grid grid-cols-2 w-2/3 self-center relative top-72 gap-x-48">
           <div>
             <Function
               title="Store"

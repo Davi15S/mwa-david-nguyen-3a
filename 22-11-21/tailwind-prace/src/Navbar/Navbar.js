@@ -9,7 +9,7 @@ function Navbar() {
             width="147"
             height="47"
             viewBox="0 0 147 47"
-            fill="none"
+            fill=""
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -77,7 +77,7 @@ function Navbar() {
         </div>
       </div>
       <div className="text-white text-base border-purple-500 rounded-xl p-3 bg-purple-500 hover:bg-purple-400 transition-colors duration-500">
-        <a className="p-4 text-white font-bold text-base" href="https://cs.money/">SIGN IN</a>
+        <a className="p-4 text-white font-bold text-base" href="https://cs.money/" target="_blank">SIGN IN</a>
       </div>
     </nav>
   );
@@ -85,7 +85,7 @@ function Navbar() {
 
 function NavItem({ txt }) {
   return (
-    <a className="inline-block mx-7 text-white text-base hover:text-purple-500 transition-colors duration-500" href="">
+    <a className="inline-block mx-7 text-white text-base hover:text-purple-400 transition-colors duration-500" href="">
       {txt}
     </a>
   );
