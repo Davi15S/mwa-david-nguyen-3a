@@ -9,13 +9,13 @@ function MainPage() {
         <p className="text-6xl font-bold text-white text-center">
           Trade the greatest skins
         </p>
-        <p className="text-white text-base py-14 text-center">
+        <p className="text-white text-base py-14 text-center font-medium col">
           CS.MONEY helps flexibly work with your inventory on Steam from trade
           to sale
         </p>
         <a
           className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold"
-          href=""
+          href="https://cs.money/"
         >
           TRY IT NOW
         </a>
@@ -64,7 +64,7 @@ function MainPage() {
               title="Store"
               txt="Our Store mode makes the items buying process easier and faster. Take advantage of:"
             />
-            <ul className="costum-marker text-white h-52">
+            <ul className="costum-marker text-white h-52 font-medium col">
               <li>Items with a 28.6% discount</li>
               <li>
                 Ability to buy without Steam Guard and with any Steam level
@@ -76,7 +76,7 @@ function MainPage() {
               title="Trade"
               txt="Improved trade interface. Now faster and more user-friendly:"
             />
-            <ul className="costum-marker text-white h-52">
+            <ul className="costum-marker text-white h-52 font-medium col">
               <li>Upgraded search filters</li>
               <li>More detailed skin cards</li>
               <li>Cart interface added</li>
@@ -87,7 +87,7 @@ function MainPage() {
               title="Personal account"
               txt="Improved and reworked structure of personal accounts now includes:"
             />
-            <ul className="costum-marker text-white pb-16">
+            <ul className="costum-marker text-white pb-16 font-medium col">
               <li>
                 Separate security section and high-level account protection
               </li>
@@ -100,7 +100,7 @@ function MainPage() {
               title="Prime subscription"
               txt="Activate the Prime subscription to get more useful features and benefits:"
             />
-            <ul className="costum-marker text-white pb-16">
+            <ul className="costum-marker text-white pb-16 font-medium col">
               <li>Special conditions in other products of CS.MONEY</li>
               <li>
                 Increased deposit bonus and special discounts in the Store
@@ -116,12 +116,12 @@ function MainPage() {
 
 function Function({ title, txt }) {
   return (
-    <div className="text-white">
+    <div className="text-white font-medium">
       <div className="flex items-center feature">
         <img className="w-16 rounded-lg" src={logo} alt="" />
         <p className="text-2xl p-6 font-semibold">{title}</p>
       </div>
-      <p className="py-12">{txt}</p>
+      <p className="py-12 col">{txt}</p>
     </div>
   );
 }

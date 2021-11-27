@@ -2,7 +2,7 @@ import "../Navbar/navbar.css";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-4 px-72 absolute z-10 w-full">
+    <nav className="flex items-center justify-between p-9 px-72 absolute z-10 w-full">
       <div className="flex">
         <a href="">
           <svg
@@ -74,11 +74,10 @@ function Navbar() {
           <NavItem txt="Home" />
           <NavItem txt="Pricing" />
           <NavItem txt="Features" />
-          <NavItem txt="Testimonial" />
         </div>
       </div>
       <div className="text-white text-base border-2 border-purple-500 rounded-full p-4 bg-purple-500">
-        <a className="p-4 text-white font-bold" href="">SIGN IN</a>
+        <a className="p-4 text-white font-bold" href="https://cs.money/">SIGN IN</a>
       </div>
     </nav>
   );
