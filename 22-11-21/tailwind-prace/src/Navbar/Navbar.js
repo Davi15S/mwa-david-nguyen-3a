@@ -17,7 +17,7 @@ function Navbar() {
     window.addEventListener('scroll', changeBackground)
 
    return (
-    <nav className={navbar ? 'flex items-center justify-between p-4 px-72 fixed z-30 w-full nav' : 'flex items-center justify-between p-4 px-72 fixed z-30 w-full'}>
+    <nav className={navbar ? 'flex items-center justify-between p-4 px-72 fixed z-30 w-full active' : 'flex items-center justify-between p-4 px-72 fixed z-30 w-full nav'}>
       <div className="flex">
         <Link to="top" duration={500} smooth={true} offset={-130}>
           <a href="">
