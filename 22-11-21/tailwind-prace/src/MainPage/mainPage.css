@@ -1,0 +1,26 @@
+.costum {
+  height: 3500px;
+  background-color: #24232b;
+}
+
+.feature::after {
+  content: '';
+  height: 100px;
+  width: 160px;
+  border-bottom: 2px solid #8b5cf6;
+  position: absolute;
+}
+
+.video {
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.costum-marker {
+  list-style: inside;
+}
+
+li::marker {
+  color: #8b5cf6;
+}
+/*# sourceMappingURL=MainPage.css.map */
