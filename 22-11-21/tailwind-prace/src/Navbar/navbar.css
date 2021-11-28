@@ -3,6 +3,8 @@
 @tailwind utilities;
 .active {
   background-color: #1f1f25;
+  -webkit-transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in;
 }
 
 .nav {

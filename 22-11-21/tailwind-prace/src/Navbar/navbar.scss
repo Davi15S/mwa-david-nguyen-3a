@@ -4,6 +4,7 @@
 
 .active {
     background-color: #1f1f25;
+    transition: background-color 250ms ease-in;
 }
 
 .nav {

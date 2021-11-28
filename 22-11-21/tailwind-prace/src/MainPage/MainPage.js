@@ -21,7 +21,7 @@ function MainPage() {
         >
           TRY IT NOW
         </a>
-        <img className="self-center my-40 w-2/3 rounded-2xl" src={img} alt="" />
+        <img className="self-center my-40 w-2/3 rounded-2xl shadow-2xl" src={img} alt="" />
 
         <p
           className="text-white text-3xl font-medium text-center"
@@ -42,7 +42,7 @@ function MainPage() {
 
         <div className="relative w-2/3 self-center top-80 flex" id="section2">
           <iframe
-            className="rounded-2xl"
+            className="rounded-2xl shadow-2xl"
             width="854"
             height="480"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
