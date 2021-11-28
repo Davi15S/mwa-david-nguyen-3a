@@ -60,7 +60,7 @@ function MainPage() {
                 title="Security"
                 txt="Trusted by the biggest esports brands"
               />
-              <ul className="costum-marker list-disc  h-52 font-medium text-col">
+              <ul className="list-disc  h-52 font-medium text-col list-inside">
                 <li>
                   <a
                     className="hover:text-purple-500 transition-colors duration-500"
@@ -111,7 +111,7 @@ function MainPage() {
               title="Trade"
               txt="Improved trade interface. Now faster and more user-friendly:"
             />
-            <ul className="costum-marker list-disc h-52 font-medium text-col">
+            <ul className="list-disc h-52 font-medium text-col list-inside">
               <li>Upgraded search filters</li>
               <li>More detailed skin cards</li>
               <li>Cart interface added</li>
@@ -122,7 +122,7 @@ function MainPage() {
               title="Personal account"
               txt="Improved and reworked structure of personal accounts now includes:"
             />
-            <ul className="costum-marker list-disc pb-16 font-medium text-col">
+            <ul className="list-disc pb-16 font-medium text-col list-inside">
               <li>
                 Separate security section and high-level account protection
               </li>
@@ -135,7 +135,7 @@ function MainPage() {
               title="Prime subscription"
               txt="Activate the Prime subscription to get more useful features and benefits:"
             />
-            <ul className="costum-marker list-disc  pb-16 font-medium text-col">
+            <ul className="list-disc  pb-16 font-medium text-col list-inside">
               <li>Special conditions in other products of CS.MONEY</li>
               <li>
                 Increased deposit bonus and special discounts in the Store
