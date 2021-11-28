@@ -1,7 +1,6 @@
 import "../MainPage/mainPage.css";
 import img from "../images/csmoney.jpg";
 import logo from "../images/csmoney-logo.png";
-import React, { useEffect, useState } from "react";
 
 function MainPage() {
   return (
