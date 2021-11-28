@@ -4,9 +4,9 @@
 
 .active {
     background-color: #1f1f25;
-    transition: 0.2s;
 }
 
 .nav {
     background-color: transparent;
+    transition: background-color 250ms ease-in;
 }

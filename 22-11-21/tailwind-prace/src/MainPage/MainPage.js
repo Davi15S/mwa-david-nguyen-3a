@@ -4,14 +4,13 @@ import logo from "../images/csmoney-logo.png";
 import React, { useEffect, useState } from "react";
 
 function MainPage() {
-
   return (
-    <div className="costum" id="top">
+    <div className="bg-costum h-3600px" id="top">
       <div className="relative flex flex-col z-20 top-60">
         <p className="text-6xl font-bold text-white text-center">
           Trade the greatest skins
         </p>
-        <p className="text-white text-base py-14 text-center font-medium col">
+        <p className=" text-base py-14 text-center font-medium text-col">
           Buy, sell, and trade skins easier and faster. All deals are secured
           with the highest level protection methods.
         </p>
@@ -24,7 +23,10 @@ function MainPage() {
         </a>
         <img className="self-center my-40 w-2/3 rounded-2xl" src={img} alt="" />
 
-        <p className="text-white text-3xl font-medium text-center" id="section1">
+        <p
+          className="text-white text-3xl font-medium text-center"
+          id="section1"
+        >
           Meet the features of site
         </p>
 
@@ -58,10 +60,10 @@ function MainPage() {
                 title="Security"
                 txt="Trusted by the biggest esports brands"
               />
-              <ul className="costum-marker text-white h-52 font-medium col">
+              <ul className="costum-marker list-disc  h-52 font-medium text-col">
                 <li>
                   <a
-                    className="hover:text-purple-400 transition-colors duration-500"
+                    className="hover:text-purple-500 transition-colors duration-500"
                     href="https://ecs.faceit.com/"
                     target="_blank"
                   >
@@ -70,7 +72,7 @@ function MainPage() {
                 </li>
                 <li>
                   <a
-                    className="hover:text-purple-400 transition-colors duration-500"
+                    className="hover:text-purple-500 transition-colors duration-500"
                     href="https://blastpremier.com/"
                     target="_blank"
                   >
@@ -79,7 +81,7 @@ function MainPage() {
                 </li>
                 <li>
                   <a
-                    className="hover:text-purple-400 transition-colors duration-500"
+                    className="hover:text-purple-500 transition-colors duration-500"
                     href="https://starladder.com/en"
                     target="_blank"
                   >
@@ -97,7 +99,7 @@ function MainPage() {
               title="Store"
               txt="Our Store mode makes the items buying process easier and faster. Take advantage of:"
             />
-            <ul className="costum-marker text-white h-52 font-medium col">
+            <ul className="list-disc text-col h-52 font-medium list-inside">
               <li>Items with a 28.6% discount</li>
               <li>
                 Ability to buy without Steam Guard and with any Steam level
@@ -109,7 +111,7 @@ function MainPage() {
               title="Trade"
               txt="Improved trade interface. Now faster and more user-friendly:"
             />
-            <ul className="costum-marker text-white h-52 font-medium col">
+            <ul className="costum-marker list-disc h-52 font-medium text-col">
               <li>Upgraded search filters</li>
               <li>More detailed skin cards</li>
               <li>Cart interface added</li>
@@ -120,7 +122,7 @@ function MainPage() {
               title="Personal account"
               txt="Improved and reworked structure of personal accounts now includes:"
             />
-            <ul className="costum-marker text-white pb-16 font-medium col">
+            <ul className="costum-marker list-disc pb-16 font-medium text-col">
               <li>
                 Separate security section and high-level account protection
               </li>
@@ -133,7 +135,7 @@ function MainPage() {
               title="Prime subscription"
               txt="Activate the Prime subscription to get more useful features and benefits:"
             />
-            <ul className="costum-marker text-white pb-16 font-medium col">
+            <ul className="costum-marker list-disc  pb-16 font-medium text-col">
               <li>Special conditions in other products of CS.MONEY</li>
               <li>
                 Increased deposit bonus and special discounts in the Store
@@ -154,7 +156,7 @@ function Function({ title, txt }) {
         <img className="w-16 rounded-lg" src={logo} alt="" />
         <p className="text-2xl p-6 font-semibold">{title}</p>
       </div>
-      <p className="py-12 col">{txt}</p>
+      <p className="py-12 text-col">{txt}</p>
     </div>
   );
 }
