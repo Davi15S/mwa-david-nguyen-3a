@@ -6,22 +6,24 @@ function MainPage() {
   return (
     <div className="bg-costum h-auto" id="top">
       <div className="relative flex flex-col z-20 pt-60 pb-28">
-        <p className="text-6xl font-bold text-white text-center">
-          Trade the greatest skins
-        </p>
-        <p className=" text-base py-14 text-center font-medium text-col">
-          Buy, sell, and trade skins easier and faster. All deals are secured
-          with the highest level protection methods.
-        </p>
-        <a
-          className="text-white bg-purple-500 px-16 py-4 self-center text-lg rounded-md font-semibold hover:bg-purple-400 transition-colors duration-500"
-          href="https://cs.money/"
-          target="_blank"
-        >
-          TRY IT NOW
-        </a>
+        <div className="w-10/12 flex flex-col self-center justify-center">
+          <p className="text-6xl font-bold text-white text-center">
+            Trade the greatest skins
+          </p>
+          <p className=" text-base py-14 text-center font-medium text-col">
+            Buy, sell, and trade skins easier and faster. All deals are secured
+            with the highest level protection methods.
+          </p>
+          <a
+            className="text-white bg-purple-500 px-16 py-4 m-auto text-lg rounded-md font-semibold hover:bg-purple-400 transition-colors duration-500"
+            href="https://cs.money/"
+            target="_blank"
+          >
+            TRY IT NOW
+          </a>
+        </div>
         <img
-          className="self-center my-40 w-2/3 rounded-2xl shadow-2xl"
+          className="self-center my-40 w-10/12 rounded-2xl shadow-2xl xl:w-2/3"
           src={img}
           alt=""
         />
@@ -33,7 +35,7 @@ function MainPage() {
           Meet the features of site
         </p>
 
-        <div className="self-center w-2/3 grid grid-cols-4 m-24 relative gap-x-24">
+        <div className="self-center w-2/3 grid grid-cols-1 my-24 relative md:grid-cols-2 md:gap-x-48 2xl:grid-cols-4">
           <Function title="40%" txt="bunos for top up balance" />
           <Function title="80 K" txt="CS:GO and Dota2 items on our website" />
           <Function title="30 sec" txt="from logging in to making a purchase" />
@@ -43,22 +45,23 @@ function MainPage() {
           />
         </div>
 
-        <div className="relative w-2/3 self-center mt-40 grid grid-cols-2" id="section2">
+        <div
+          className="relative w-full self-center grid grid-cols-1 sm:w-2/3 2xl:grid-cols-8 2xl:gap-x-28"
+          id="section2"
+        >
           <iframe
-            className="rounded-2xl shadow-2xl"
-            width="100%"
-            height="480"
+            className="rounded-2xl shadow-2xl w-11/12 justify-self-center h-48 sm:w-full sm:h-480px 2xl:col-span-5"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
             allowfullscreen="allowfullscreen"
           ></iframe>
-          <div className="pl-32">
-            <div className="pb-10">
+          <div className="w-2/3 justify-self-center mt-32 sm:w-full md:grid md:grid-cols-2 md:gap-x-48 2xl:grid-cols-1 2xl:mt-0 2xl:col-span-3">
+            <div className="">
               <Function
-                title="Operation Riptide Collection"
+                title="Operation Riptide"
                 txt="Newest collections always on CS.MONEY"
               />
             </div>
-            <div className="pb-10">
+            <div className="">
               <Function
                 title="Security"
                 txt="Trusted by the biggest esports brands"
@@ -98,7 +101,7 @@ function MainPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 w-2/3 self-center relative gap-x-48">
+        <div className="grid grid-cols-1 w-2/3 self-center relative gap-x-48 xl:grid-cols-2">
           <div>
             <Function
               title="Store"
@@ -150,7 +153,7 @@ function MainPage() {
 
 function Function({ title, txt }) {
   return (
-    <div className="text-white font-medium">
+    <div className="text-white font-medium my-4">
       <div className="flex items-center feature">
         <img className="w-16 rounded-lg" src={logo} alt="" />
         <p className="text-2xl p-6 font-semibold">{title}</p>

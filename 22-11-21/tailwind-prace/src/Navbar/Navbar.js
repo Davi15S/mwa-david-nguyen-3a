@@ -19,16 +19,16 @@ function Navbar() {
     <nav
       className={
         navbar
-          ? "flex items-center justify-between p-4 px-72 fixed z-30 w-full active shadow-lg transition-all duration-300"
-          : "flex items-center justify-between p-4 px-72 fixed z-30 w-full nav transition-all duration-300"
+          ? "px-5 flex items-center justify-between p-4 fixed z-30 w-full active shadow-lg transition-all duration-300 md:px-16 xl:px-72"
+          : "px-5 flex items-center justify-between p-4 fixed z-30 w-full nav transition-all duration-300 md:px-16 xl:px-72"
       }
     >
       <div className="flex">
         <Link to="top" duration={500} smooth={true} offset={-130}>
           <a href="">
             <svg
-              width="147"
-              height="47"
+              width="110"
+              height="35"
               viewBox="0 0 147 47"
               fill=""
               xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="">
-        <div className="">
+        <div className="hidden md:flex">
           <NavItem txt="Home" to="top" duration={500} smooth={true} offset={0} className={"inline-block mx-7 hover:text-purple-400"}/>
           <NavItem txt="Features" to="section1" duration={500} smooth={true} offset={-130} className={"inline-block mx-7 hover:text-purple-400"}/>
           <NavItem txt="Tutorial" to="section2" duration={500} smooth={true} offset={-150} className={"inline-block mx-7 hover:text-purple-400"}/>
@@ -100,7 +100,7 @@ function Navbar() {
       </div>
       <div className="text-white text-base border-purple-500 rounded-xl p-3 bg-purple-500 hover:bg-purple-400 transition-all duration-500">
         <a
-          className="p-4 text-white font-bold text-base"
+          className="p-4 text-white font-bold text-sm"
           href="https://cs.money/"
           target="_blank"
         >

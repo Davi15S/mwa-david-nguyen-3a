@@ -9,6 +9,7 @@ module.exports = {
       },
       height: {
         "3600px": "3600px",
+        "480px": "480px",
       },
     },
   },
