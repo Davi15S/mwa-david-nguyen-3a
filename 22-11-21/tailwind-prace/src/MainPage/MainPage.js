@@ -35,7 +35,7 @@ function MainPage() {
           Meet the features of site
         </p>
 
-        <div className="self-center w-2/3 grid grid-cols-1 my-24 relative md:grid-cols-2 md:gap-x-48 2xl:grid-cols-4">
+        <div className="self-center w-2/3 grid grid-cols-1 my-24 relative md:grid-cols-2 md:gap-x-48 2xl:grid-cols-4 2xl:gap-x-44">
           <Function title="40%" txt="bunos for top up balance" />
           <Function title="80 K" txt="CS:GO and Dota2 items on our website" />
           <Function title="30 sec" txt="from logging in to making a purchase" />
