@@ -27,8 +27,7 @@ function Navbar() {
         <Link to="top" duration={500} smooth={true} offset={-130}>
           <a href="">
             <svg
-              width="110"
-              height="35"
+              className="w-110px h-35px xl:w-147px xl:h-47px"
               viewBox="0 0 147 47"
               fill=""
               xmlns="http://www.w3.org/2000/svg"

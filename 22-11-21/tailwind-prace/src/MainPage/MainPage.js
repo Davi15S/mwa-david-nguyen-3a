@@ -50,9 +50,9 @@ function MainPage() {
           id="section2"
         >
           <iframe
-            className="rounded-2xl shadow-2xl w-11/12 justify-self-center h-48 sm:w-full sm:h-480px 2xl:col-span-5"
+            className="rounded-2xl shadow-2xl w-10/12 justify-self-center h-48 sm:w-full sm:h-480px 2xl:col-span-5"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
-            allowfullscreen="allowfullscreen"
+            allowFullScreen="allowfullscreen"
           ></iframe>
           <div className="w-2/3 justify-self-center mt-32 sm:w-full md:grid md:grid-cols-2 md:gap-x-48 2xl:grid-cols-1 2xl:mt-0 2xl:col-span-3">
             <div className="">
