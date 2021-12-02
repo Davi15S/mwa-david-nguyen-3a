@@ -15,3 +15,20 @@
 li::marker {
     color: rgba(139, 92, 246, 1);
 }
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f1f25;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 92, 246, 1);
+    border-radius: 20px;
+
+    &:hover{
+        background-color: rgba(167, 139, 250, 1);
+    }
+}

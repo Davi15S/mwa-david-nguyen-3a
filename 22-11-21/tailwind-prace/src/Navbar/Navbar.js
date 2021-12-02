@@ -5,19 +5,24 @@ import React, { useEffect, useState } from "react";
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
-    const changeBackground = () => {
-      if(window.scrollY >= 100) {
-        setNavbar(true)
-      }
-      else {
-        setNavbar(false)
-      }
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-  
-    window.addEventListener('scroll', changeBackground)
+  };
 
-   return (
-    <nav className={navbar ? 'flex items-center justify-between p-4 px-72 fixed z-30 w-full active' : 'flex items-center justify-between p-4 px-72 fixed z-30 w-full nav'}>
+  window.addEventListener("scroll", changeBackground);
+
+  return (
+    <nav
+      className={
+        navbar
+          ? "flex items-center justify-between p-4 px-72 fixed z-30 w-full active shadow-lg transition-all duration-300"
+          : "flex items-center justify-between p-4 px-72 fixed z-30 w-full nav transition-all duration-300"
+      }
+    >
       <div className="flex">
         <Link to="top" duration={500} smooth={true} offset={-130}>
           <a href="">
@@ -88,18 +93,12 @@ function Navbar() {
       </div>
       <div className="">
         <div className="">
-          <Link to="top" duration={500} smooth={true} offset={-130}>
-            <NavItem txt="Home" />
-          </Link>
-          <Link to="section1" duration={500} smooth={true} offset={-130}>
-            <NavItem txt="Features" />
-          </Link>
-          <Link to="section2" duration={500} smooth={true} offset={-150}>
-            <NavItem txt="Tutorial" />
-          </Link>
+          <NavItem txt="Home" to="top" duration={500} smooth={true} offset={0} className={"inline-block mx-7 hover:text-purple-400"}/>
+          <NavItem txt="Features" to="section1" duration={500} smooth={true} offset={-130} className={"inline-block mx-7 hover:text-purple-400"}/>
+          <NavItem txt="Tutorial" to="section2" duration={500} smooth={true} offset={-150} className={"inline-block mx-7 hover:text-purple-400"}/>
         </div>
       </div>
-      <div className="text-white text-base border-purple-500 rounded-xl p-3 bg-purple-500 hover:bg-purple-400 transition-colors duration-500">
+      <div className="text-white text-base border-purple-500 rounded-xl p-3 bg-purple-500 hover:bg-purple-400 transition-all duration-500">
         <a
           className="p-4 text-white font-bold text-base"
           href="https://cs.money/"
@@ -112,14 +111,16 @@ function Navbar() {
   );
 }
 
-function NavItem({ txt }) {
+function NavItem({ txt , to, duration, smooth, offset, className}) {
   return (
-    <a
-      className="inline-block mx-7 text-white text-base hover:text-purple-400 transition-colors duration-500"
-      href=""
-    >
-      {txt}
-    </a>
+    <Link to={to} duration={duration} smooth={smooth} offset={offset}>
+      <a
+        className={`text-white text-base transition-all duration-500 ${className}`}
+        href=""
+      >
+        {txt}
+      </a>
+    </Link>
   );
 }
 

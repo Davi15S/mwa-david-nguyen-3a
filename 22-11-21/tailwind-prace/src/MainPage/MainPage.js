@@ -4,8 +4,8 @@ import logo from "../images/csmoney-logo.png";
 
 function MainPage() {
   return (
-    <div className="bg-costum h-3600px" id="top">
-      <div className="relative flex flex-col z-20 top-60">
+    <div className="bg-costum h-auto" id="top">
+      <div className="relative flex flex-col z-20 pt-60 pb-28">
         <p className="text-6xl font-bold text-white text-center">
           Trade the greatest skins
         </p>
@@ -20,7 +20,11 @@ function MainPage() {
         >
           TRY IT NOW
         </a>
-        <img className="self-center my-40 w-2/3 rounded-2xl shadow-2xl" src={img} alt="" />
+        <img
+          className="self-center my-40 w-2/3 rounded-2xl shadow-2xl"
+          src={img}
+          alt=""
+        />
 
         <p
           className="text-white text-3xl font-medium text-center"
@@ -29,7 +33,7 @@ function MainPage() {
           Meet the features of site
         </p>
 
-        <div className="self-center w-2/3 grid grid-cols-4 top-24 relative gap-x-24">
+        <div className="self-center w-2/3 grid grid-cols-4 m-24 relative gap-x-24">
           <Function title="40%" txt="bunos for top up balance" />
           <Function title="80 K" txt="CS:GO and Dota2 items on our website" />
           <Function title="30 sec" txt="from logging in to making a purchase" />
@@ -39,10 +43,10 @@ function MainPage() {
           />
         </div>
 
-        <div className="relative w-2/3 self-center top-80 flex" id="section2">
+        <div className="relative w-2/3 self-center mt-40 grid grid-cols-2" id="section2">
           <iframe
             className="rounded-2xl shadow-2xl"
-            width="854"
+            width="100%"
             height="480"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
             allowfullscreen="allowfullscreen"
@@ -59,8 +63,8 @@ function MainPage() {
                 title="Security"
                 txt="Trusted by the biggest esports brands"
               />
-              <ul className="list-disc  h-52 font-medium text-col list-inside">
-                <li>
+              <List
+                txt={
                   <a
                     className="hover:text-purple-500 transition-colors duration-500"
                     href="https://ecs.faceit.com/"
@@ -68,8 +72,8 @@ function MainPage() {
                   >
                     ECS
                   </a>
-                </li>
-                <li>
+                }
+                p={
                   <a
                     className="hover:text-purple-500 transition-colors duration-500"
                     href="https://blastpremier.com/"
@@ -77,70 +81,66 @@ function MainPage() {
                   >
                     BlastProSeries
                   </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-purple-500 transition-colors duration-500"
-                    href="https://starladder.com/en"
-                    target="_blank"
-                  >
-                    Starladder
-                  </a>
-                </li>
-              </ul>
+                }
+                li={
+                  <li>
+                    <a
+                      className="hover:text-purple-500 transition-colors duration-500"
+                      href="https://starladder.com/en"
+                      target="_blank"
+                    >
+                      Starladder
+                    </a>
+                  </li>
+                }
+              />
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 w-2/3 self-center relative top-72 gap-x-48">
+        <div className="grid grid-cols-2 w-2/3 self-center relative gap-x-48">
           <div>
             <Function
               title="Store"
               txt="Our Store mode makes the items buying process easier and faster. Take advantage of:"
             />
-            <ul className="list-disc text-col h-52 font-medium list-inside">
-              <li>Items with a 28.6% discount</li>
-              <li>
-                Ability to buy without Steam Guard and with any Steam level
-              </li>
-            </ul>
+            <List
+              txt="Items with a 28.6% discount"
+              p="Ability to buy without Steam Guard and with any Steam level"
+            />
           </div>
           <div>
             <Function
               title="Trade"
-              txt="Improved trade interface. Now faster and more user-friendly:"
+              txt="Improved trade interface. Now faster and more user-friendly: "
             />
-            <ul className="list-disc h-52 font-medium text-col list-inside">
-              <li>Upgraded search filters</li>
-              <li>More detailed skin cards</li>
-              <li>Cart interface added</li>
-            </ul>
+            <List
+              txt="Upgraded search filters"
+              p="More detailed skin cards"
+              li={<li>Cart interface added</li>}
+            />
           </div>
           <div>
             <Function
               title="Personal account"
               txt="Improved and reworked structure of personal accounts now includes:"
             />
-            <ul className="list-disc pb-16 font-medium text-col list-inside">
-              <li>
-                Separate security section and high-level account protection
-              </li>
-              <li>Notification mode and communication channel</li>
-              <li>Detailed view of all transactions</li>
-            </ul>
+            <List
+              txt="Separate security section and high-level account protection"
+              p="Notification mode and communication channel"
+              li={<li>Detailed view of all transactions</li>}
+            />
           </div>
           <div>
             <Function
               title="Prime subscription"
               txt="Activate the Prime subscription to get more useful features and benefits:"
             />
-            <ul className="list-disc  pb-16 font-medium text-col list-inside">
-              <li>Special conditions in other products of CS.MONEY</li>
-              <li>
-                Increased deposit bonus and special discounts in the Store
-              </li>
-              <li>Reduced commission</li>
-            </ul>
+            <List
+              txt="Special conditions in other products of CS.MONEY"
+              p="Increased deposit bonus and special discounts in the Store"
+              li={<li>Reduced commission</li>}
+            />
           </div>
         </div>
       </div>
@@ -157,6 +157,18 @@ function Function({ title, txt }) {
       </div>
       <p className="py-12 text-col">{txt}</p>
     </div>
+  );
+}
+
+function List({ txt, p, li }) {
+  return (
+    <ul className="list-disc pb-28 font-medium text-col list-outside">
+      <div className="pl-5">
+        <li>{txt}</li>
+        <li>{p}</li>
+        {li}
+      </div>
+    </ul>
   );
 }
 

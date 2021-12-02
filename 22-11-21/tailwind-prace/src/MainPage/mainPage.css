@@ -12,4 +12,21 @@
 li::marker {
   color: #8b5cf6;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f25;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a78bfa;
+}
 /*# sourceMappingURL=mainPage.css.map */
