@@ -35,7 +35,7 @@ function MainPage() {
           Meet the features of site
         </p>
 
-        <div className="self-center w-2/3 grid grid-cols-1 my-24 relative md:grid-cols-2 md:gap-x-48 2xl:grid-cols-4 2xl:gap-x-44">
+        <div className="self-center w-2/3 grid grid-cols-1 my-24 relative md:grid-cols-2 md:gap-x-44 2xl:grid-cols-4 2xl:gap-x-32">
           <Function title="40%" txt="bunos for top up balance" />
           <Function title="80 K" txt="CS:GO and Dota2 items on our website" />
           <Function title="30 sec" txt="from logging in to making a purchase" />
@@ -50,11 +50,11 @@ function MainPage() {
           id="section2"
         >
           <iframe
-            className="rounded-2xl shadow-2xl w-10/12 justify-self-center h-48 sm:w-full sm:h-480px 2xl:col-span-5"
+            className="rounded-2xl shadow-2xl w-10/12 justify-self-center h-60 sm:w-full sm:h-480px 2xl:col-span-5"
             src="https://www.youtube.com/embed/WrHHrQNFLns"
             allowFullScreen="allowfullscreen"
           ></iframe>
-          <div className="w-2/3 justify-self-center mt-32 sm:w-full md:grid md:grid-cols-2 md:gap-x-48 2xl:grid-cols-1 2xl:mt-0 2xl:col-span-3">
+          <div className="w-2/3 justify-self-center mt-32 sm:w-full md:grid md:grid-cols-2 md:gap-x-44 2xl:grid-cols-1 2xl:mt-0 2xl:col-span-3">
             <div className="">
               <Function
                 title="Operation Riptide"
@@ -154,9 +154,9 @@ function MainPage() {
 function Function({ title, txt }) {
   return (
     <div className="text-white font-medium my-4">
-      <div className="flex items-center feature">
+      <div className="flex feature items-center">
         <img className="w-16 rounded-lg" src={logo} alt="" />
-        <p className="text-2xl p-6 font-semibold">{title}</p>
+        <p className="p-6 font-semibold whitespace-nowrap text-xl xl:text-2xl">{title}</p>
       </div>
       <p className="py-12 text-col">{txt}</p>
     </div>
