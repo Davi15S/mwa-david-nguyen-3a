@@ -3,3 +3,12 @@
     transform: translate(-50%, -50%);
     font-family: 'Courier Prime', monospace;
 }
+
+.arrow {
+    transform: translate(-50%, 0%);
+    top: 90%;
+
+    &:hover {
+        background-color: rgba(128, 128, 128, 0.473);
+    }
+}
