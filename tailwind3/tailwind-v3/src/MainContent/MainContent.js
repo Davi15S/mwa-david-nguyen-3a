@@ -11,11 +11,11 @@ function MainContent() {
         src={main}
         alt=""
       />
-      <div className="absolute text-white main-text left-1/2 text-6xl">
+      <div className="absolute text-white main-text left-1/2 text-2xl whitespace-nowrap md:text-6xl">
         Priceless elegance
       </div>
       <div>
-        <Link to="content1" smooth={true} offset={-170}>
+        <Link to="content1" smooth={true}>
           <img
             className="absolute left-1/2 arrow h-12 p-2 rounded-full transition-all duration-300"
             src={arrow}

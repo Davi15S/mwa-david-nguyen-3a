@@ -8,12 +8,12 @@ function Navbar() {
     <nav>
       <div className="w-full p-3 bg-white flex justify-between z-10 absolute">
         <div className="flex items-center pl-5">
-          <img className="w-14" src={logo} alt="" />
-          <img className="h-10 ml-6 relative top-1" src={name} alt="" />
+          <img className="w-10 sm:w-12" src={logo} alt="" />
+          <img className="h-8 ml-6 relative top-1" src={name} alt="" />
         </div>
-        <div className="items-center flex navbar text-xl">
-          <NavbarItem text={"Suits"} id={"content1"} offset={-100} />
-          <NavbarItem text={"Location"} id={"location"} />
+        <div className="items-center navbar text-xl hidden md:flex">
+          <NavbarItem text={"Suits"} id={"content1"} offset={200}/>
+          <NavbarItem text={"Location"} id={"location"} duration={2000} />
           <div className="flex pr-10">
             <img
               className="h-6 pr-4 pl-8"
@@ -27,9 +27,9 @@ function Navbar() {
   );
 }
 
-function NavbarItem({ text, id, offset }) {
+function NavbarItem({ text, id, offset, duration }) {
   return (
-    <Link to={id} smooth={true} offset={offset}>
+    <Link to={id} smooth={true} offset={offset} duration={duration}>
       <div className="pl-5 pr-5">
         <a href="">{text}</a>
       </div>
