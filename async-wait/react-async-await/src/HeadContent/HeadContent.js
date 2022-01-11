@@ -15,7 +15,7 @@ function Content() {
 
         return (
             <div className='bg-[#0b1c26] h-screen flex justify-center'>
-                <div className='bg-[#0d1b24] w-4/5 h-[70%] shadow-2xl rounded-3xl'>
+                <div className='bg-[#0d1b24] w-4/5 h-[75%] shadow-2xl rounded-b-3xl'>
                     <div className='flex m-32 gap-20'>
                         <div className="w-[20%] flex-col">
                             <img className='rounded-md shadow-xl h-[320px]' src={data.image_url} alt="" />
@@ -23,8 +23,8 @@ function Content() {
                                 <Description text={"Type:"} txt={data.type}/>
                                 <Description text={"Episodes:"} txt={data.episodes}/>
                                 <Description text={"Status:"} txt={data.status}/>
-                                <Description text={"Premiered:"} txt={data.premiered}/>
                                 <Description text={"Source:"} txt={data.source}/>
+                                <Description text={"Popularity:"} txt={"#" + data.popularity}/>
                             </div></div>
                         <div className='w-[80%]'>
                             <div className="text-white font-bold text-[3rem]">{data.title_english}</div>
