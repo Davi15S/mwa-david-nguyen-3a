@@ -5,7 +5,7 @@ function Navigation() {
         <nav>
             <div className="flex justify-between bg-white items-center h-16 bg-[#112836]">
                 <div className="text-2xl font-bold ml-10 text-white">
-                    <div>Logo</div>
+                    <div>WatchAnime</div>
                 </div>
                 <div className="flex text-xl font-bold mr-10 text-white">
                     <Buttons text = "Log In"/>

@@ -15,4 +15,14 @@ app.get("/data", (req, res) => {
     });
 });
 
+app.get("/data/episodes", (req, res) => {
+    var url =
+        "https://api.jikan.moe/v3/anime/1735/episodes/";
+
+    request.get(url, function (error, steamHttpResponse, steamHttpBody) {
+        res.setHeader("Content-Type", "application/json");
+        res.send(steamHttpBody);
+    });
+});
+
 app.listen(5000, () => console.log("server has started"));
