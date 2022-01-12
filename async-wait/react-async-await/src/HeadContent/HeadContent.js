@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import imdb from "../Images/imdb_logo.png"
 import axios from "axios"
+import "../HeadContent/HeadContent.scss"
 
 function Content() {
     let endpoints = [
@@ -28,7 +29,7 @@ function Content() {
         getData();
     }, []);
 
-    if (isLoading || fetchedData.data === undefined || fetchedDataEpisodes.data === undefined) return "Loading"
+    if (isLoading || fetchedData.data === undefined || fetchedDataEpisodes.data === undefined) return <Loading />
 
     var series = [];
     for (var i = 0; i < fetchedDataEpisodes.data.episodes_last_page; i++) {
@@ -100,12 +101,12 @@ function Episodes(props) {
             {props.data.episodes.map((i) => {
                 if (i.filler === true) {
                     return (
-                        <EpisodesDes className={"flex justify-between"} text={i.title} txt={"FILLER"} episode={i.episode_id} url={i.video_url}/>
+                        <EpisodesDes className={"flex justify-between"} text={i.title} txt={"FILLER"} episode={i.episode_id} url={i.video_url} />
                     )
                 }
                 else {
                     return (
-                        <EpisodesDes text={i.title} episode={i.episode_id} url={i.video_url}/>
+                        <EpisodesDes text={i.title} episode={i.episode_id} url={i.video_url} />
                     )
                 }
             }
@@ -122,6 +123,14 @@ function EpisodesDes({ className, text, txt, episode, url }) {
                 <div>{text}</div>
             </a>
             <div className='font-bold text-gray-400 text-sm pr-2'>{txt}</div>
+        </div>
+    )
+}
+
+function Loading() {
+    return (
+        <div className='bg-[#0b1c26] h-screen flex justify-center'>
+            <div className="lds-ring m-10"><div></div><div></div><div></div><div></div></div>
         </div>
     )
 }
