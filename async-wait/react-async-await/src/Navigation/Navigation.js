@@ -3,7 +3,7 @@ import "../Navigation/Navigation.scss"
 function Navigation() {
     return (
         <nav>
-            <div className="flex justify-between bg-white items-center h-16 bg-[#112836]">
+            <div className="flex justify-between items-center h-16 bg-[#112836]">
                 <div className="text-2xl font-bold ml-10 text-white">
                     <div>WatchAnime</div>
                 </div>

@@ -116,8 +116,8 @@ function Episodes(props) {
 
 function EpisodesDes({ className, text, txt, episode, url }) {
     return (
-        <div className={`text-white py-4 border-b border-gray-400 ${className}`}>
-            <a className='flex gap-5' href={url} target="_blank">
+        <div className={`text-white h-12 flex items-center border-b border-gray-400 font-semibold ${className}`}>
+            <a className='flex gap-5 hover:text-gray-200 transition-all duration-200' href={url} target="_blank">
                 <div className='font-bold text-gray-400'>{episode}:</div>
                 <div>{text}</div>
             </a>
