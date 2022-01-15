@@ -1,0 +1,38 @@
+$stroke-weight: 2px;
+$stroke-color-green: rgb(20 184 166);
+$stroke-color-white: white;
+$stroke-transition-time: 250ms;
+
+.costum-font {
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.costum,
+.costum-green{
+    &::before{
+        content: '';
+        top: 25px;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform: scale(0,1);
+        transition: transform ease-out $stroke-transition-time;
+    }
+
+    &:hover::before{
+        transform: scale(1,1);
+    }
+}
+
+.costum {
+    &::before{
+        border-bottom: $stroke-weight solid $stroke-color-white;
+    }
+}
+
+.costum-green {
+    &::before{
+        border-bottom: $stroke-weight solid $stroke-color-green;
+    }
+}
