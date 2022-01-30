@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex flex-col items-center space-y-6">
       <Counter />
-      <Post title="SSPŠ" text="Naší vizí je vzdělávání pro budoucnost, kde studenti nejsou pouze pasivními příjemci informací." id={2} />
+      <Post title="SSPŠ" text="Naší vizí je vzdělávání pro budoucnost, kde studenti nejsou pouze pasivními příjemci informací." id={1} />
 
       <button onClick={() => setShowComponent(!showComponent)} className="border border-black bg-white p-2 ">
         Show Component

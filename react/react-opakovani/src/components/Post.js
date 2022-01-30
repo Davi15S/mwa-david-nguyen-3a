@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 function Post({ title, text, id }) {
-    const [i, setI] = useState(id);
+    const [i, setI] = useState(id * 2);
 
     useEffect(() => {
       console.log("🐛");
-      setI(i*2)
     }, []);
     
     {i < 4 ? console.log(`🚀 ${i}`) : console.log(i)}
