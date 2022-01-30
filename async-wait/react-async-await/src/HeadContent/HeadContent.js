@@ -7,6 +7,7 @@ function Content() {
     let endpoints = [
         'http://localhost:5000/data',
         'http://localhost:5000/data/episodes',
+        'https://covid-api.mmediagroup.fr/v1/cases?country=Czechia'
     ];
 
     const [isLoading, setIsLoading] = useState(false);
@@ -18,10 +19,10 @@ function Content() {
             setIsLoading(true)
 
             axios.all(endpoints.map((endpoints) => axios.get(endpoints))).then(
-                axios.spread((data, episodes) => {
+                axios.spread((data, episodes, covid) => {
                     setFetchedData(data);
-                    setFetchDataEpisodes(episodes);
-                    console.log({ data, episodes });
+                    setFetchDataEpisodes(episodes)
+                    console.log({ data, episodes })
                 })
             );
 
@@ -107,10 +108,9 @@ function Episodes(props) {
         <div>
             {props.data.episodes.map((i) => {
                 return (
-                    <EpisodesDes text={i.title} episode={i.episode_id} url={i.video_url} />
+                    <EpisodesDes text={i.title} episode={i.episode_id} url={i.video_url} key={i.episode_id} />
                 )
-            }
-            )}
+            })}
         </div>
     )
 }
